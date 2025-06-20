@@ -1,16 +1,14 @@
 function Ubah() {
-const Jam = new Date().getHours();
-const BackgroundUtama = document.getElementById("BackgroundUtama");
-
-BackgroundUtama.style.backgroundColor = ' #006eff'
-
-if ( Jam >= 18 || Jam < 6 ) {
+    const Jam = new Date().getHours();
+    const BackgroundUtama = document.getElementById("BackgroundUtama");
+    
+    if ( Jam >= 18 || Jam < 6 ) {
     BackgroundUtama.style.backgroundColor = ' #141952'
-}
-
-else {
+    }
+    
+    else {
     BackgroundUtama.style.backgroundColor = ' #006eff' 
-}};
+    }};
 
 Ubah();
 
